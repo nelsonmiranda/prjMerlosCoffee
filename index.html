@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merlos Coffee</title>
+
+        <!-- Meta de zona -->
+        <meta charset="utf-8" />
+        <meta name="language" content="Spanish" />
+        <meta name="Geography" content="El Salvador" />
+        <meta name="country" content="El Salvador" />
+        <meta name="city" content="San Salvador" />
+
+        <!-- Meta de compatibilidad -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta  name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <!-- Meta de autores -->
+        <meta name="Designer" content="Merlos Coffee" />
+        <meta name="Publisher" content="Merlos Coffee" />
+        <meta name="author" content="Team Merlos Coffee" />
+        <meta name="Copyright" content="Merlos Coffee" />
+
+        <!-- Meta para google -->
+        <meta name="robots" content="INDEX,FOLLOW" />
+
+        <!-- Meta OpenGraph -->
+        <meta property="og:url" content="http://www.merloscoffee.260mb.net/index.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Merlos Coffee" />
+        <meta property="og:description" content="Venta de café artesanal" />
+        <meta property="og:image" content="http://www.merloscoffee.260mb.net/img/logo.png" />
+
+         <!-- Archivos JS -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/easySlider1.7.js"></script>
+ 
+        <script type="text/javascript">
+             var _gaq = _gaq || [];
+             _gaq.push(['_setAccount', 'UA-18411251-1']);
+             _gaq.push(['_trackPageview']);
+ 
+             (function() {
+                 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+        </script>
+ 
+        <script type="text/javascript">
+             $(document).ready(function(){	
+                 $("#slider").easySlider({
+                     auto: true, 
+                     continuous: true,
+                     numeric: false,
+                     controlsShow: false
+                 });
+             });	
+        </script>
+ 
+        <script type="text/javascript">
+             $(function() {
+                 var d=1000;
+                 $('#menu span').each(function(){
+                     $(this).stop().animate({
+                         'top':'0px'
+                     },d+=250);
+                 });
+ 
+                 $('#menu > li').hover(
+                 function () {
+                     var $this = $(this);
+                     $('a',$this).addClass('hover');
+                     $('span',$this).stop().animate({'top':'40px'},300).css({'zIndex':'10'});
+                 },
+                 function () {
+                     var $this = $(this);
+                     $('a',$this).removeClass('hover');
+                     $('span',$this).stop().animate({'top':'0px'},800).css({'zIndex':'-1'});
+                 }
+             );
+             });
+        </script>
+        
+         <!-- Archivos CSS -->
+         <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+         <link href="css/Menu.css" rel="stylesheet" type="text/css" />
+         <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+        <div class="MarcoInterno">
+                <div id="container">
+                    <div id="content">
+                        <div class="title"></div>
+                        <div class="navigation">
+                            <ul class="menu" id="menu">
+                                <li><span class="Inicio"></span><a href="#" class="first">Inicio</a></li>
+                                <li><span class="Productos"></span><a href="#">Productos</a></li>
+                                <li><span class="Contactanos"></span><a href="#">Contactanos</a></li>
+                                <li><span class="Ubicación"></span><a href="#" class="last">Ubicación</a></li>
+                            </ul>
+                        </div>
+                        <div id="slider">
+                            <ul>				
+                                <li><img src="img/arbolcafe.png" width="777px" height="350px" alt="Imagen 1" /></li>
+                            </ul>
+                        </div>  
+                    </div>
+    
+                    <table class="contenido">
+                        <tr>
+                            <td class="lineaDelPanelIzquierdo">
+                                <div class="panelIzquierdo">
+    
+                                    <img src="img/logo.png" alt="Merlos Coffee" style="display: block;margin-left: auto;margin-right: auto" />
+                                    <br/>
+                                    <div class="titulo">Productos</div>
+                                        <ul>
+                                            <li><a href="#">Café</a></li>
+                                            
+                                        </ul>
+                                    <br/>
+                                    <div class="titulo">CONTÁCTENOS</div>
+                                    <ul>
+                                        <li><a href="mailto:marisolmerlos.3692@gmail.com">Cont&aacute;ctenos / Contact us </a></li>
+                                        <li>Tel&eacute;fono: (503) 7759-8896</li>
+                                        <li>Urb. Isidro Men&eacute;ndez Calle. Dr. Carlos Gonzales Bonilla Casa #1, San Salvador, El Salvador.</li>
+                                    </ul>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="panelDerecho">
+                                    <strong>Merlos Coffee</strong>
+                                    <br/>
+                                    <br/>
+                                    Nuestro caf&eacute; lleva garant&iacute;a de ser 100% cosechado en la montaña, tostado y molido de manera
+                                    artesanal, el m&aacute;s fresco aroma y exelente calidad.
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="footer">
+                Merlos Coffee
+                <br/>
+                <script language="javascript">
+                    var fecha=new Date();
+                    var diames=fecha.getDate();
+                    var mes=fecha.getMonth() +1 ;
+                    var ano=fecha.getFullYear();
+                    document.write(" " + diames + "/" + mes + "/" + ano ); 
+                </script>
+        </div>
+    </body>
+</html>

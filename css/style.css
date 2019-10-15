@@ -1,0 +1,117 @@
+/* 
+    Document   : style
+    Created on : 03-21-2012, 11:27:06 AM
+    Author     : Algiers Impresores
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    background-color: whitesmoke;
+    margin: auto 0px;
+    text-align: center;
+    padding: 0px;
+}
+
+div.MarcoInterno{
+    width: 777px;
+    margin: auto;
+    padding-top: 0px;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: Gray;
+    background-color: rgb(242, 235, 194);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+table.contenido{
+    font-family: sans-serif;
+    font-size: small;
+}
+
+table.contenido td{
+    vertical-align: top;
+}
+
+div.panelIzquierdo{
+    color: #1c5252;
+    font-weight: bold;
+    margin: 5px;
+    text-align: justify;
+    width: 250px;
+        vertical-align: top;
+}
+
+div.panelIzquierdo a {
+    color: #1c5252;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+div.panelIzquierdo a:hover {
+    color: #006633 ;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.panelIzquierdo ul{
+    list-style-type: circle;
+    text-align: left;
+    font-weight: normal;
+}
+
+div.panelIzquierdo img{
+    vertical-align: middle;
+}
+
+table.contenido td.lineaDelPanelIzquierdo{
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    border-color: gray;
+    
+}
+
+div.footer{
+    color: gray;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: smaller;
+}
+
+div.panelDerecho{
+    color: #1c5252;
+    padding: 5px;
+    vertical-align: top;
+    text-align: justify;
+}
+
+div.panelDerecho a {
+    color: #1c5252;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+div.panelDerecho a:hover {
+    color: #006633 ;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.panelDerecho ul{
+    list-style-type: circle;
+    text-align: left;
+    font-weight: normal;
+}
+
+div.panelDerecho table td{
+    padding: 10px;
+}
+
+div.titulo{
+    text-shadow: 0 1px 3px #000;
+    text-align: center;
+    font-weight: bold;
+    background: #1c5252;
+    color: white;
+}
